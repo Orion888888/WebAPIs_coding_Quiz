@@ -30,7 +30,7 @@
 to the buttons. They grow and change color when the cursor hovers over.*/
   button{
     padding:1em;
-    margin: 100px;
+    margin: 20px auto 0;
     width: 200px;
     height: 60px;
     text-align: center;
@@ -44,6 +44,8 @@ to the buttons. They grow and change color when the cursor hovers over.*/
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
     font-weight: lighter;
+    cursor: pointer;
+    display: block;
   }
 
   button:hover{
