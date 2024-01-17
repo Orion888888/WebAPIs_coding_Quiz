@@ -34,8 +34,7 @@ to the buttons. They grow and change color when the cursor hovers over.*/
     width: 200px;
     height: 60px;
     text-align: center;
-    position: relative;
-    top: 10px; left: 290px;
+    position: sticky;
     border: 3px, dotted #555;
     border-radius: 30px;
     transition-duration: 3s;
@@ -71,3 +70,28 @@ to the buttons. They grow and change color when the cursor hovers over.*/
 .quiz-name, .quiz-intro {
     text-align: center;
 }
+
+/*This provides a better visual when viewing in different devices to ensure legibitlity and function.*/
+@media screen and (max-width: 1000px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .word-guess,
+    .results {
+      width: 90vw;
+    }
+  
+    section {
+      background-color: white;
+      margin: 20px auto;
+      width: 92vw;
+    }
+  }
+  
+  @media screen and (max-width: 504px) {
+    section, button {
+      font-size: 12px;
+      width: 20ox;
+    }
+  }
