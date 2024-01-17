@@ -54,6 +54,11 @@ to the buttons. They grow and change color when the cursor hovers over.*/
     transform: scale(1.2);
     color: aliceblue;
   }
+  .score-card{
+    position: absolute;
+    width: 250px;
+    text-align: center;
+  }
 
   /*This styles the section box and the alignemnt it takes on the webpage.*/
 

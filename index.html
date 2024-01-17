@@ -20,9 +20,11 @@
     <body>
       <!-- Page margins are created using the container and container-fluid classes -->
       <header class="container-fluid bg-dark text-light mb-5 p-3">
-        <div class="score-card">
-            <h1>View Highscores</h1>
-        </div>
+        <a>
+            <button class="score-card" id="view-scoreboard">
+            View Highscores
+            </button>
+         </a>
 
         <div class="card-timer">
             <h3 class="timer-text">Time: </h3>
@@ -42,11 +44,12 @@
                 </h3>
             </div>
           </div>
+          <div class="display-answer"></div>
 
           <button class="start-button">Start Quiz</button>
         </section>
   
       </main>
-      <script src=""></script>
+      <script src="assets/script.js"></script>
     </body>
   </html>
