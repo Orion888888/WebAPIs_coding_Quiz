@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-  
+/*This is the base setting for the web page's aesthetic. */
   body {
     font-family: monospace;
     margin: 0;
@@ -11,7 +11,23 @@
     justify-content: flex-start;
     background: linear-gradient(0deg, rgb(55, 100, 142) 0%, rgba(237,245,249,1) 63%);
   }
+/*attributes for the hearder portion of the webpage containing the timer and scores*/
+  header {
+    padding: 20px;
+    text-align: center;
+    background: #265e92;
+    color: #fff;
+  }
+  .score-card {
+    text-align: left;
+  }
+  .card-timer {
+    text-align: right;
+    font-size: 15px;
+  }
 
+/* The following code sections focus on the Start button and motion that I added
+to the buttons. They grow and change color when the cursor hovers over.*/
   button{
     padding:1em;
     margin: 0;
@@ -20,7 +36,7 @@
     text-align: center;
     top: 240px;
     left: 260px;
-    position: left;
+    position: center;
     border: 3px, dotted #555;
     border-radius: 30px;
     transition-duration: 3s;
@@ -31,3 +47,28 @@
     font-size: larger;
     font-weight: lighter;
   }
+
+  button:hover{
+    cursor:pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    transform: scale(1.2);
+    color: aliceblue;
+  }
+
+  /*This styles the section box and the alignemnt it takes on the webpage.*/
+
+  section {
+    flex: 0 auto;
+    padding: 8px;
+    box-sizing: content-box;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: white;
+    border-radius: 30px;
+    height: 400px; 
+  }
+
+.quiz-name, .quiz-intro {
+    text-align: center;
+}
