@@ -1,8 +1,12 @@
 var timerElement = document.querySelector(".timer-count");
 var startButton = document.querySelector(".start-button");
+var questions = document.querySelector("section")
 
 var timer;
 var timerCount;
+
+// Get Dom Elements
+let questionsEl = document.querySelector(#)
 
 // The startGame function is called when the start button is clicked
 function startQuiz(){
@@ -12,11 +16,12 @@ function startQuiz(){
 }
 
 // The following code builds the questions that are being asked during the quiz.
-// They indicate question 
-const questions = [
+// They indicate question
+
+Let questions = [
     {
         prompt: "Commonly used data types DO NOT include:"
-        options:[
+        options: [
             "1. strings",
             "2. booleans",
             "3. alerts",
@@ -26,7 +31,7 @@ const questions = [
     },
     {
         prompt: "The condition in an if/else statement is enclosed within __________."
-        options:[
+        options: [
             "1. quotes",
             "2. curlybrackets",
             "3. paranthesis",
@@ -36,7 +41,7 @@ const questions = [
     },
     {
         prompt: "Arrays in JavaScript can be used to store ________."
-        options:[
+        options: [
             "1. numbers and strings",
             "2. other arrays",
             "3. booleans",
@@ -46,7 +51,7 @@ const questions = [
     },
     {
         prompt: "String values must be enclosed within ______ when being assigned to variables."
-        options:[
+        options: [
             "1. commas",
             "2. curly brackets",
             "3. quotes",
@@ -56,7 +61,7 @@ const questions = [
     },
     {
         prompt: "A very useful tool used during development and debuggin for printing content to the debugger is:"
-        options:[
+        options: [
             "1. JavaScript",
             "2. terminal/bash",
             "3. for loops",
@@ -66,7 +71,7 @@ const questions = [
     },
     {
         prompt: "String values must be enclosed within ______ when being assigned to variables."
-        options:[
+        options: [
             "1. strings",
             "2. booleans",
             "3. alerts",
