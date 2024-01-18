@@ -74,6 +74,14 @@ function questionClick(){
 }
 
 //Ends the quiz by hiding the questions and stops time to show final score.
+function quizEnd(){
+    clearInterval(timerCountId);
+    let endScreenEl = document.getElementById("quiz-end");
+    endScreenEl.removeAttribute("class");
+    let finalScoreEl = document.getElementById("score-final");
+    finalScoreEl.textContent = time;
+    questionsEl.setAttribute("class", "hide");
+}
 
 // The following code builds the questions that are being asked during the quiz.
 // They indicate question
