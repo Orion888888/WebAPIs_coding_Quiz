@@ -15,13 +15,19 @@ let nameEl = document.querySelector("#name");
 let feedbackEl = document.querySelector("#feedback");
 let restartBtn = document.querySelector("#restart");
 
+// Before quiz begins
+let currentQuestionIndex = 0;
+let time = questions.lenght * 15;
+let timerCount;
 
-
-// The startGame function is called when the start button is clicked
+// The startGame function is called when the start button is clicked. Quiz starts.
 function startQuiz(){
-    timerCount = 75;
-    startButton.disabled = true;
-    startTimer()
+    timerCount = setInterval(clockTick, 1000);
+    timerElement.textContent = time;
+    let landingScreenEl = document.getElementById("start-screen");
+    landingScreenEl.setAttribute("class", "hide");
+    questionsEl.removeAttribute("class");
+    getQuestions()
 }
 
 // The following code builds the questions that are being asked during the quiz.
