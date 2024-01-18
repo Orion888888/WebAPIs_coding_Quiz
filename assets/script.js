@@ -83,6 +83,17 @@ function quizEnd(){
     questionsEl.setAttribute("class", "hide");
 }
 
+//Ends the quiz timer when it reaches 0.
+function clockTick(){
+    time--;
+    timerCountEl.textContent = time;
+    if (time <= 0){
+        quizEnd();
+    }
+}
+
+
+
 // The following code builds the questions that are being asked during the quiz.
 // They indicate question
 
