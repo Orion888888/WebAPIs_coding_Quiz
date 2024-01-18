@@ -42,7 +42,7 @@ let submitBtn = document.querySelector("#submit-score");
 let startBtn = document.querySelector(".start-button");
 let nameEl = document.querySelector("#name");
 let feedbackEl = document.querySelector("#feedback");
-let restartBtn = document.querySelector("#restart");
+
 
 // Before quiz begins
 let currentQuestionIndex = 0;

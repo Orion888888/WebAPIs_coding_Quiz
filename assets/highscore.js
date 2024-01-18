@@ -6,11 +6,13 @@ function printHighscores(){
     highscores.sort(function(a, b){
         return b.score - a.score;
     });
-    highscores.array.forEach(function(score){
+    highscores.forEach(function(score){
         let liTag = document.createElement("li");
         liTag.textContent = score.name + " - " + score.score;
         let olEl = document.getElementById("highscores");
-        olEl.appendChild(liTag);
+        if(olEl){
+            olEl.appendChild(liTag);
+        }
     });
 }
 
@@ -21,6 +23,9 @@ function clearHighscores() {
     window.location.reload();
 }
 
-document.getElementById("clear").onclick = clearHighscores;
+let clearBtn = document.getElementById("clear-btn");
+if(clearBtn){
+    clearBtn.onclick = clearHighscores;
+}
 
 printHighscores();

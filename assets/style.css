@@ -78,6 +78,10 @@ to the buttons. They grow and change color when the cursor hovers over.*/
     text-align: center;
 }
 
+.hide{
+  display: none;
+}
+
 /*This provides a better visual when viewing in different devices to ensure legibitlity and function.*/
 @media screen and (max-width: 1000px) {
     main {
