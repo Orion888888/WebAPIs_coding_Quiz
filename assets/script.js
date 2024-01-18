@@ -92,6 +92,20 @@ function clockTick(){
     }
 }
 
+//This saves the scores to the local storage along with name.
+function saveHighscore(){
+    let name = nameEl.value.trim();
+    if(name = !-- ""){
+        let highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+        let newScore = {
+            score: time,
+            name: name,
+        };
+        highscores.push(newScore);
+        window.localStorage.setItem("highscores", JSON.stringify(highscores));
+        alert("Your score has been submitted!");
+    }
+}
 
 
 // The following code builds the questions that are being asked during the quiz.
