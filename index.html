@@ -13,6 +13,7 @@
     crossorigin="anonymous"
      />
   -->
+  
     <link rel="stylesheet" type="text/css" href="assets/style.css"/>
      <title>Web APIs Quiz Application</title>
     </head>
@@ -36,7 +37,9 @@
       </header>
       <!--Introduction to the quiz with a start button.-->
       <main>
+        <div class="landing" id="start-screen">
         <section>
+          <div id="quiz-start"> 
           <div class="quiz-name">
             <h1>Web APIs Coding Quiz Challenge</h1>
             <div class="quiz-intro">
@@ -49,8 +52,10 @@
 
           <button class="start-button">Start Quiz</button>
         </section>
+        </div>
+        </div>
   <!--This creates the areas for the questions to populate once the quiz starts-->
-        <div class="hide" id="questons">
+        <div class="hide" id="questions">
           <h2 id="question-words"></h2>
           <div class="options" id="options"></div>
         </div>
@@ -68,6 +73,6 @@
 <!--Final message once submit button is pressed.-->
         <div id="feedback" class="feedback hide"></div>
       </main>
-      <script src="assets/script.js"></script>
+      <script src="./assets/script.js"></script>
     </body>
   </html>
