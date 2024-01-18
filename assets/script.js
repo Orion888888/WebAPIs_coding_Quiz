@@ -6,7 +6,16 @@ var timer;
 var timerCount;
 
 // Get Dom Elements
-let questionsEl = document.querySelector(#)
+let questionsEl = document.querySelector("#questions");
+let timerCountEl = document.querySelector("#timer-count");
+let choicesEl = document.querySelector("#options");
+let submitBtn = document.querySelector("#submit-score");
+let startBtn = document.querySelector("#start-button");
+let nameEl = document.querySelector("#name");
+let feedbackEl = document.querySelector("#feedback");
+let restartBtn = document.querySelector("#restart");
+
+
 
 // The startGame function is called when the start button is clicked
 function startQuiz(){
