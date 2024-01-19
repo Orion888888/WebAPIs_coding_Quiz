@@ -5,9 +5,7 @@ function printHighscores(){
     let highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
     console.log(highscores);
     
-    highscores.sort(function(a, b){
-        return b.score - a.score;
-    });
+    
     highscores.forEach(function(score) {
         let liTag = document.createElement("li");
         liTag.textContent = score.name + " - " + score.score;
