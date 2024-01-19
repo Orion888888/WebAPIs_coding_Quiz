@@ -4,32 +4,32 @@
 let questions = [
     {
         question: "Commonly used data types DO NOT include:",
-        options: ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
+        options: ["strings", "booleans", "alerts", "numbers"],
         answer: "alerts",
     },
     {
         question: "The condition in an if/else statement is enclosed within __________.",
-        options: ["1. quotes", "2. curlybrackets", "3. paranthesis", "4. square brackets"],
+        options: ["quotes", "curlybrackets", "paranthesis", "square brackets"],
         answer: "paranthesis",
     },
     {
         question: "Arrays in JavaScript can be used to store ________.",
-        options: ["1. numbers and strings", "2. other arrays", "3. booleans", "4. all of the above"],
+        options: ["numbers and strings", "other arrays", "booleans", "all of the above"],
         answer: "all of the above",
     },
     {
         question: "String values must be enclosed within ______ when being assigned to variables.",
-        options: ["1. commas", "2. curly brackets", "3. quotes", "4. paranthesis"],
-        question: "commas",
+        options: ["commas", "curly brackets", "quotes", "paranthesis"],
+        answer: "commas",
     },
     {
         question: "A very useful tool used during development and debuggin for printing content to the debugger is:",
-        options: ["1. JavaScript", "2. terminal/bash", "3. for loops", "4. console.log"],
+        options: ["JavaScript", "terminal/bash", "for loops", "console.log"],
         answer: "console.log",
     },
     {
         question: "String values must be enclosed within ______ when being assigned to variables.",
-        options: ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
+        options: ["strings", "booleans", "alerts", "numbers"],
         answer: "alerts",
     },
 ];
@@ -51,17 +51,19 @@ let timerCount;
 
 // The startGame function is called when the start button is clicked. Quiz starts and hides beginning page.
 function startQuiz(){
+    console.log("Inside startQuiz");
     timerCount = setInterval(clockTick, 1000);
     timerCountEl.textContent = time;
 
     let landingScreenEl = document.getElementById("start-screen");
     landingScreenEl.setAttribute("class", "hide");
-    questionsEl.removeAttribute("class");
-    getQuestions()
+    questionsEl.removeAttribute("class",);
+    getQuestions();
 }
 
 //This loops the array of questions. Answers and creates list with buttons.
 function getQuestions(){
+    console.log("Inside getQuestions");
     let currentQuestion = questions[currentQuestionIndex];
     let promptEl = document.getElementById("questions-words");
     
